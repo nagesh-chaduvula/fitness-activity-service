@@ -47,7 +47,10 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
-		<!-- WebClient: Inter service communication for making calls to REST endpoints  -->
+		<!-- WebClient: Inter service communication for making calls to REST endpoints.
+			From activity-service, we are making the rest call to user-service to validate the user.
+			So add webflux dependency in activity-service
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
